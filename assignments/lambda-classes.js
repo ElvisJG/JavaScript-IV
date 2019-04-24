@@ -20,10 +20,10 @@ class Instructor extends Person {
     this.catchPhrase = instructorAttributes.catchPhrase;
   }
   demo(subject) {
-    console.log(`Today we are learning about ${subject}`);
+    console.log(`Today we are learning about ${this.subject}.`);
   }
   grade(student, subject) {
-    console.log(`${student.name} recieves a perfect score on ${subject}`);
+    console.log(`${this.name} recieves a perfect score on ${this.subject}.`);
   }
 }
 
@@ -31,5 +31,18 @@ class Student extends Person {
   constructor(studentAttributes) {
     super(studentAttributes);
     this.previousBackground = studentAttributes.previousBackground;
+    this.className = studentAttributes.className;
+    this.favSubjects = studentAttributes.favSubjects;
+  }
+  listSubjects(favSubjects) {
+    console.log(`My favorite subjects are ${this.favSubjects}.`);
+  }
+  PRAssignment(subject) {
+    console.log(`${this.name} has submitted a PR for ${this.subject}.`);
+  }
+  sprintChallenge(subject) {
+    console.log(
+      `${student.name} has begun sprint challenge on ${this.subject}`
+    );
   }
 }
