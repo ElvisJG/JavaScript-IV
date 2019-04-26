@@ -42,7 +42,12 @@ class Student extends Person {
     this.favSubjects = studentAttributes.favSubjects;
   }
   listSubjects() {
-    return `My favorite subjects are ${this.favSubjects}.`;
+    // return `My favorite subjects are ${this.favSubjects}.`;
+    // for (let i = 0; i < this.favSubjects.length; i++) { console.log(`${this.favSubjects[element]}`); }
+    console.log("Favorite Subjects")
+    this.favSubjects.forEach(subj => {
+      console.log(`${subj}`);
+    });
   }
   PRAssignment(subject) {
     return `${this.name} has submitted a PR for ${subject}.`;
