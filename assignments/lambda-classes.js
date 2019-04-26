@@ -148,7 +148,7 @@ const JB = new PM({
 console.log(Elvis.name);
 console.log(Elvis.speak());
 console.log(Elvis.sprintChallenge('Javascript'));
-console.log(Elvis.listSubjects());
+Elvis.listSubjects();
 console.log(Elvis.PRAssignment('Javascript'));
 console.log(Keiran.speak());
 console.log(Keiran.demo('PHP'));
